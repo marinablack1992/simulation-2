@@ -13,7 +13,7 @@
 
 }
 
-.middleContent {
+.midC {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -26,17 +26,19 @@
 .auth_logo {
   width: 170px;
   margin-bottom: 50px;
+  
 }
 
-.textAndInput {
+.tai {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
+  width: 38vw;
   
 }
 
-.text {
+.t {
   font-size: 1.7em;
   font-weight: 900;
   margin-bottom: 3px;
@@ -44,10 +46,10 @@
   
 }
 
-.inputBox {
+.inB {
   border: 1px solid #549773;
   font-size: 2em;
-  width: 35vw;
+  width: 38vw;
   margin-bottom: 30px;
   
 }

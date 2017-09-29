@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 // import auth_logo from './auth_logo.png';
-import './App.css';
+import './Dashboard.css';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div className="outer">
-        <div className="tempHeader"><span>Houser Dashboard</span></div>
+      
 
         <div className="Dash">
           <div className="middleContent">
@@ -33,7 +32,7 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-      </div>
+    
     );
   }
 }
