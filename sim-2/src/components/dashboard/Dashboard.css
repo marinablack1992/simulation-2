@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+.outer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Dash {
+  text-align: center;
+  display: flex;
+  background-color: #B0D3C0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.tempHeader {
+  height: 8vh;
+  width: 100vw;
+  background-color: #549773;
+  font-size: 3em;
+  justify-content: center;
+  color: white;
+}
+
+.middleContent {
+  background-color: #E3F3EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+}
+
+.addNew {
+  font-size: 1.6em;
+  font-weight: 900;
+  background-color: #8DE995;
+  border: none;
+  height: 45px;
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-size: 1.75em;
+  font-weight: 400;
+  margin-bottom: 3px;
+  margin-left: 20px;
+  
+}
+
+.inputBox {
+  border: 1px solid #549773;
+  border-radius: 2px;
+  font-size: 1.75em;
+  width: 85px;
+  height: 35px;
+  margin-right: 30px;
+  margin-left: 10px;
+  
+  
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  background-color: #8DE995;
+  color: black;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  height: 40px;
+  width: 75px;
+  
+}
+
+.reset {
+  background-color: #3C524A;
+  color: white;
+  border: none;
+  margin-left: 15px;
+  font-size: 1.5em;
+  font-weight: 600;
+  height: 40px;
+  width: 75px;
+  margin-bottom: 30px;
+}
+
+.homeListingContainer {
+  display: flex;
+
+}
+
+.homeListings {
+  margin-top: 30px;
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.propPlaceholder {
+  width: 47vw;
+  height: 20vh;
+  background-color: lightgray;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
