@@ -27,6 +27,7 @@ massive(process.env.CONNECTION_STRING).then(db => {
   
   //Controllers:
   const authControllers = require('./controllers/authControllers');
+  const propControllers = require('./controllers/propControllers')
   
   // User Endpoints:
   
@@ -36,7 +37,11 @@ massive(process.env.CONNECTION_STRING).then(db => {
 
   // Properties Endpoints:
 
-  
+  app.post('/api/properties', propControllers.createProperty)
+  app.get('/api/properties/:id', propControllers.getUserProps)
+  app.delete('/api/properties/:id', propControllers.deleteUserProp)
+
+
 
 
 const port = 3001;
