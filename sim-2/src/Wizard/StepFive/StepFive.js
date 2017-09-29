@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { updateDesiredRent, updateWizard } from '';
+import { updateDesiredRent, updateWizard } from '../../ducks/reducer';
 
 class StepFive extends Component {
     render(){
