@@ -1,5 +1,5 @@
 import React from "react"
-import {Switch, Route} from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 
 import AuthPage from "./components/authpage/AuthPage"
 import Dashboard from "./components/dashboard/Dashboard"
@@ -16,7 +16,15 @@ export default (
     <Switch>
 
         <Route component={AuthPage} exact path='/' />
-        <Route component={Dashboard} path='/dashboard'/>
+        {/* <Route component={Dashboard} path='/dashboard'/> */}
+        <Route path='/dashboard' render={() => {
+            return (
+                <div>
+                    <Header />
+                    <Dashboard />
+                </div>
+            )
+        }} />
 
     </Switch>
 )
