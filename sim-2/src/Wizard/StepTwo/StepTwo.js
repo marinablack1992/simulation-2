@@ -52,4 +52,6 @@ function mapStateToProps(st) {
     };
 }
 
-export default connect ( mapStateToProps, { updatePropAddress, updatePropCity, updatePropState, updatePropZip } ) ( StepTwo );
+// export default connect ( mapStateToProps, { updatePropAddress, updatePropCity, updatePropState, updatePropZip } ) ( StepTwo );
+
+export default StepTwo;
