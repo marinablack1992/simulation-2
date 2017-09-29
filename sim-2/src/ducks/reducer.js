@@ -19,7 +19,7 @@ const wizardState = {
 
     // Auth Components
 
-
+    
     username: '',
     password: '',
     loginStatus: false,
