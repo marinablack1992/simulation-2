@@ -15,11 +15,14 @@ const wizardState = {
     monthlyMortgage: 0,
     recommendedRent: 0,
     desiredRent: 0,
+    loginUser: {
+    
+    },
 
 
     // Auth Components
 
-    
+
     username: '',
     password: '',
     loginStatus: false,
@@ -45,6 +48,7 @@ const UPDATE_USERID = "UPDATE_USERID";
 const UPDATE_LOGIN_STATUS = "UPDATE_LOGIN_STATUS";
 const UPDATE_USERNAME = "UPDATE_USERNAME";
 const UPDATE_PASSWORD = "UPDATE_PASSWORD";
+const REGISTER = "REGISTER";
 
 
 //Dashboard Consts
@@ -73,7 +77,8 @@ function reducer( state = wizardState, action ) {
             return Object.assign({}, state, { password: action.payload })
         case LOGOUT_USER:
             return Object.assign({}, wizardState)
-
+        case REGISTER + '_FULFILLED':
+            return Object.assign({}, state, { loginUser: action.payload })
 
         //Wizard Cases
 
@@ -160,6 +165,13 @@ export function updateUserId( userid ) {
     return {
         type: UPDATE_USERID,
         payload: userid
+    }
+}
+export function register(){
+    let promise = axios.post( '/api/auth/register' ).then( res => res.data );
+    return {
+        type: REGISTER,
+        payload: promise
     }
 }
 export function logoutUser( loginStatus ) {
