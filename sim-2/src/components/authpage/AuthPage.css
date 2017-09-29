@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.Auth {
+  text-align: center;
+  display: flex;
+  background-color: #B0D3C0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Open Sans', sans-serif;
+  
+
+}
+
+.middleContent {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+}
+
+.auth_logo {
+  width: 170px;
+  margin-bottom: 50px;
+}
+
+.textAndInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  
+}
+
+.text {
+  font-size: 1.7em;
+  font-weight: 900;
+  margin-bottom: 3px;
+  margin-left: 20px;
+  
+}
+
+.inputBox {
+  border: 1px solid #549773;
+  font-size: 2em;
+  width: 35vw;
+  margin-bottom: 30px;
+  
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login {
+  background-color: #8DE995;
+  color: black;
+  border: none;
+  font-size: 1.3em;
+  font-weight: 900;
+
+  width: 130px;
+  height: 40px;
+  
+}
+
+.register {
+  background-color: #3C524A;
+  color: white;
+  border: none;
+  margin-left: 30px;
+  font-size: 1.3em;
+  font-weight: 900;
+
+  width: 130px;
+  height: 40px;
+}
