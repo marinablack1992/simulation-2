@@ -39,7 +39,7 @@ massive(process.env.CONNECTION_STRING).then(db => {
 
   app.post('/api/properties', propControllers.createProperty)
   app.get('/api/properties/:id', propControllers.getUserProps)
-  app.delete('/api/properties/:id', propControllers.deleteUserProp)
+  app.delete('/api/properties/:userid/:id', propControllers.deleteUserProp)
 
 
 

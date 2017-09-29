@@ -16,7 +16,6 @@ module.exports = {
         const { params } = req;
 
 
-
         db.getUserProps([params.id])
             .then((properties) => res.status(200).send(properties))
             .catch((err) => res.status(500).send(err))
