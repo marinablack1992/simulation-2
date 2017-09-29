@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { updateLoanAmount, updateMonthlyMortgage } from '';
+import { updateLoanAmount, updateMonthlyMortgage } from '../../ducks/reducer';
 
 class StepFour extends Component {
     render(){

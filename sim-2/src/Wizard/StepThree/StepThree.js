@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { updateImageUrl } from '';
+import { updateImageUrl } from '../../ducks/reducer';
 
 class StepThree extends Component {
     render(){

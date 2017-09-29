@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { updatePropertyName, updatePropertyDescription } from '';
+import { updatePropertyName, updatePropertyDescription } from '../../ducks/reducer';
 
 class StepOne extends Component {
     render(){

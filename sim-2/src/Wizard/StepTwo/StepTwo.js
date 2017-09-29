@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { updatePropAddress, updatePropCity, updatePropState, updatePropZip } from '';
+import { updatePropAddress, updatePropCity, updatePropState, updatePropZip } from '../../ducks/reducer';
 
 class StepTwo extends Component {
     render(){
