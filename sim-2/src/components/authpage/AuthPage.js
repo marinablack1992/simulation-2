@@ -5,6 +5,21 @@ import './AuthPage.css';
 import {Link} from "react-router-dom"
 
 class AuthPage extends Component {
+  constructor(){
+    super();
+    this.state = {
+      username: '',
+      password: ''
+    }
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange(prop,val){
+    this.setState({[prop]: val})
+  }
+
+  
+
   render() {
     return (
       <div className="Auth">
@@ -14,9 +29,9 @@ class AuthPage extends Component {
 
           <div className="tai">
             <span className="t">Username</span>
-            <input className="inB"></input>
+            <input className="inB" onChange={e => this.handleChange('username', e.target.value)}></input>
 
-            <span className="t">Password</span>
+            <span className="t" onChange={e => this.handleChange('password', e.target.value)}>Password</span>
             <input className="inB"></input>
           </div>
 
